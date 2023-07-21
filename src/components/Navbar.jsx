@@ -41,11 +41,12 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-[20px] font-bold text-[#ab0c26] ">
-        
-          <Link to="/">
-            <h1 className="w-full text-4xl font-bold text-[#ab0c26 font-['Segoe_UI']">TracMate.</h1>
-          </Link>
-      
+        <Link to="/">
+          <h1 className="w-full text-4xl font-bold text-[#ab0c26 font-['Segoe_UI']">
+            TracMate.
+          </h1>
+        </Link>
+
         <ul className="hidden md:flex">
           <li className="p-4">
             <Link to="/">
@@ -99,10 +100,34 @@ const Navbar = () => {
           <h1 className="w-full text-3xl font-bold text-[#ab0c26] m-4">
             TracMate.
           </h1>
-          <li className="p-4 border-b border-gray-600">Home</li>
-          <li className="p-4 border-b border-gray-600">Budget</li>
-          <li className="p-4 border-b border-gray-600">About</li>
-          <li className="p-4 border-b border-gray-600">Login</li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/Budget">Budget</Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/Aboutus">About</Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            {authUser ? (
+              <Link
+                
+                onClick={userSignOut}
+                to="/SignOn"
+              >
+                Sign Out
+              </Link>
+            ) : (
+              <Link
+               
+                onClick={userSignOut}
+                to="/SignOn"
+              >
+                Login
+              </Link>
+            )}
+          </li>
         </ul>
       </div>
       <Routes>
