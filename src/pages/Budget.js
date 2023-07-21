@@ -32,10 +32,10 @@ const UserChallenge = () => {
       return 100;
     }
     if (window.innerWidth < 1300) {
-      return 200;
+      return 150;
     }
     if (window.innerWidth > 1300) {
-      return 300;
+      return 200;
     }
   }
 
@@ -48,10 +48,9 @@ const UserChallenge = () => {
     }
   }
 
-  window.onresize = function () {
-    
-    return setTimeout(handleToggle, 10);
-  };
+
+
+ 
 
   function setUp() {
     if (!visible) {
@@ -65,7 +64,7 @@ const UserChallenge = () => {
             data: users.map((user) => user.amount),
             backgroundColor: users.map((user) => random_bg_color(user)),
             cutout: 100,
-            radius: resize(),
+            radius: 100,
           },
         ],
       };
@@ -95,8 +94,8 @@ const UserChallenge = () => {
       return (
         <div className="pt-40">
         <div
-          style={{ position: "relative", height: "600px" }}
-          className="inset-x-20"
+          style={{ position: "relative", height: "40vh", width:"90vw" }}
+          className="pr-20"
           key={users.map((user) => user.id)}
         >
           <Doughnut data={data} options={options}></Doughnut>
@@ -263,7 +262,7 @@ const UserChallenge = () => {
         );
       })}
 
-      <div>{setUp()}</div>
+      <div className="">{setUp()}</div>
     </div>
   );
 };
