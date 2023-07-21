@@ -163,8 +163,7 @@
   /* form */
   
   .form {
-    width: 90vw;
-    max-width: var(--fixed-width);
+
     background: rgb(0, 3, 0);
     background: linear-gradient(
       0deg,

@@ -13,7 +13,7 @@ const Cards = () => {
             src={Single}
             alt="/"
           />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
+          <h2 className="text-2xl font-bold text-center py-8">1 User</h2>
           <p className="text-center text-4xl font-bold">$19.99</p>
           <div className="text-center font-medium">
             <p className="py-2 border-b mx-8 mt-8">25 GB Storage</p>
@@ -30,11 +30,11 @@ const Cards = () => {
             src={Double}
             alt="/"
           />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-          <p className="text-center text-4xl font-bold">$19.99</p>
+          <h2 className="text-2xl font-bold text-center py-8">3 Users</h2>
+          <p className="text-center text-4xl font-bold">$29.99</p>
           <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-8">25 GB Storage</p>
-            <p className="py-2 border-b mx-8">1 User Allowed</p>
+            <p className="py-2 border-b mx-8 mt-8">50 GB Storage</p>
+            <p className="py-2 border-b mx-8">3 User Allowed</p>
             <p className="py-2 border-b mx-8">Unlimited Usage</p>
           </div>
           <button className="bg-[#ab0c26] w-[200px] rounded-md my-6 mx-auto px-6 py-3 text-white font-bold">
@@ -47,11 +47,11 @@ const Cards = () => {
             src={Triple}
             alt="/"
           />
-          <h2 className="text-2xl font-bold text-center py-8">Single User</h2>
-          <p className="text-center text-4xl font-bold">$19.99</p>
+          <h2 className="text-2xl font-bold text-center py-8">5 Users</h2>
+          <p className="text-center text-4xl font-bold">$49.99</p>
           <div className="text-center font-medium">
-            <p className="py-2 border-b mx-8 mt-8">25 GB Storage</p>
-            <p className="py-2 border-b mx-8">1 User Allowed</p>
+            <p className="py-2 border-b mx-8 mt-8">100 GB Storage</p>
+            <p className="py-2 border-b mx-8">5 User Allowed</p>
             <p className="py-2 border-b mx-8">Unlimited Usage</p>
           </div>
           <button className="bg-[#ab0c26] w-[200px] rounded-md text-white font-bold my-6 mx-auto px-6 py-3">

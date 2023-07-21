@@ -49,8 +49,8 @@ const UserChallenge = () => {
   }
 
   window.onresize = function () {
-    setTimeout(handleToggle, 100);
-    return setTimeout(handleToggle, 500);
+    
+    return setTimeout(handleToggle, 10);
   };
 
   function setUp() {
@@ -148,7 +148,7 @@ const UserChallenge = () => {
 
   return (
     <div className="p-20 mt-[-80px]">
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form w-fit" onSubmit={handleSubmit}>
         <h4 className="font-['Segoe_UI'] font-bold text-4xl md:text-5xl text-center border-b border-[#000300] text-white">
           Add Item
         </h4>
